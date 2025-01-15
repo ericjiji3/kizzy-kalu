@@ -8,6 +8,9 @@
     padding: 50px 0 50px 50px;
     opacity: 0;
 }
+.slideshow-container .mobile-header{
+    display: none;
+}
 .slideshow-container .socials{
     font-size: 20px;
     font-style: italic;
@@ -82,7 +85,11 @@
     top: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 5;
+    cursor: e-resize;
 }
+
+
 .slideshow-container .carousel-container .carousel-images-container{
     position: absolute;
     right: 0px;
@@ -92,11 +99,86 @@
     height: 100%;
     opacity: 0;
     z-index: -1;
-    transition: all 0.3s ease-in;
+    transition: all .5s ease-in;
 }
+
 .slideshow-container .carousel-container .carousel-images-container.active{
     opacity: 1;
     z-index: 1;
-    transition: all 0.3s ease-in;
-    transition-delay: 0.3s;
+    transition: all .5s ease-in;
+    transition-delay: .5s;
 }
+@media(max-width: 1000px){
+    .slideshow-container{
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: unset;
+        left: unset;
+        
+    }
+    .slideshow-container .mobile-header{
+        display: block;
+        width: fit-content;
+        font-style: normal;
+    }
+    .slideshow-container .socials{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: unset;
+        transform: unset;
+        font-size: 10px;
+        align-items: center;
+    }
+    .slideshow-container .descriptions-selectors-container{
+        position: relative;
+        bottom: unset;
+        transform: unset;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .slideshow-container .descriptions-selectors-container .descriptions-container{
+        width: 50%;
+        min-height: 100px;
+        margin-bottom: 0;
+    }
+    .slideshow-container .descriptions-selectors-container .descriptions-container .description-container{
+        bottom: unset;
+        top: 0;
+    }
+    .slideshow-container .descriptions-selectors-container .selectors-container{
+        width: 50%;
+    }
+    .slideshow-container .descriptions-selectors-container .descriptions-container .description-container .title{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .slideshow-container .descriptions-selectors-container .descriptions-container .description-container .roles, .location{
+        font-size: 10px;
+    }
+    .selectors-container .selector-container{
+        font-size: 10px;
+    }
+    .slideshow-container .carousel-container{
+        position: relative;
+        top: unset;
+        right: unset;
+        width: 100%;
+        padding-right: 0;
+        overflow-y: unset;
+        overflow-x: unset;
+        /* min-height: 500px; */
+    }
+    .slideshow-container .carousel-container .carousel-images-container{
+        padding-right: 0;
+        /* position:static; */
+    }
+    .slideshow-container .carousel-container .carousel-images-container img, .carousel-images-container video{
+        width: 100%;
+        height: auto;
+    }
+}   

@@ -72,7 +72,11 @@ export default function Slideshow(){
 
     return(
         <div className='slideshow-container'>
+            
             <div className='socials'>
+                <div className='mobile-header'>
+                    <h1>KIZZY KALU</h1>
+                </div>
                 <a href="mailto: ek@kizzykalu.com">ek@kizzykalu.com</a>
                 <a href="https://www.instagram.com/kizzykalu/" target='_blank'>instagram</a>
             </div>
@@ -117,7 +121,7 @@ export default function Slideshow(){
                 </div>
                 
                 <div className={imageIndex == 1 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={0} slide-index={1}>
-                    <video width="320" height="240" controls={false} preload="none" loop muted autoPlay={true}
+                    <video width="320" height="240" controls 
                         className='carousel-image img-1-2-1'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/6ZfqaKTcs2BowZB91sACj3/b0663bf5fc57edec85b36d48bb41570c/CAR_SCENE_FINAL_2_-9X16-__1_.mp4" type="video/mp4" />
