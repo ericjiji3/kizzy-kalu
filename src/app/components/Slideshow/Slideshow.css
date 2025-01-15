@@ -1,0 +1,102 @@
+.slideshow-container{
+    width: 100vw;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 50px 0 50px 50px;
+    opacity: 0;
+}
+.slideshow-container .socials{
+    font-size: 20px;
+    font-style: italic;
+    position: absolute;
+    top: calc(50% + 50px);
+    transform: translateY(-50%);
+}
+.slideshow-container .socials a{
+    display: block;
+}
+.slideshow-container .socials a:first-child{
+    margin-bottom: 5px;
+}
+.slideshow-container .descriptions-selectors-container{
+    position: absolute;
+    bottom: 50px;
+    width: 400px;
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container{
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 250px;
+    height: 100%;
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container .description-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container .description-container.active{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container .description-container span{
+    display: block;
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container .description-container .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.slideshow-container .descriptions-selectors-container .descriptions-container .description-container .roles, .location{
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
+.slideshow-container .descriptions-selectors-container .selectors-container{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+.slideshow-container .descriptions-selectors-container .selectors-container .selector-container:hover{
+    cursor: pointer;
+}
+.slideshow-container .descriptions-selectors-container .selectors-container .selector-container.active{
+    font-weight: bold;
+}
+.slideshow-container .carousel-container{
+    position: absolute;
+    right: 0px;
+    padding-right: 50px;
+    width: calc(100% - 550px);
+    height: 100%;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.slideshow-container .carousel-container .carousel-images-container{
+    position: absolute;
+    right: 0px;
+    padding-right: 50px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+.slideshow-container .carousel-container .carousel-images-container.active{
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.3s;
+}
