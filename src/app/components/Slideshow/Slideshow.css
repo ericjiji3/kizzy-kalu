@@ -76,6 +76,7 @@
 .slideshow-container .descriptions-selectors-container .selectors-container .selector-container.active{
     font-weight: bold;
 }
+
 .slideshow-container .carousel-container{
     position: absolute;
     right: 0px;
@@ -88,6 +89,9 @@
     z-index: 5;
     cursor: e-resize;
     
+}
+.slideshow-container .mobile-buttons-container{
+    display: none;
 }
 .slideshow-container .carousel-container:has(.carousel-images-container.active){
     height: 100%;
@@ -305,6 +309,15 @@
     .slideshow-container .descriptions-selectors-container .descriptions-container .description-container .roles, .location{
         font-size: 10px;
     }
+    .slideshow-container .mobile-buttons-container{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    .slideshow-container .mobile-buttons-container .mobile-button svg{
+        width: 12.5px;
+        height: auto;
+    }
     .selectors-container .selector-container{
         font-size: 10px;
     }
@@ -329,9 +342,49 @@
     .slideshow-container .carousel-container .carousel-images-container.active{
         position: relative!important;
     }
+    .slideshow-container .carousel-container .carousel-images-container[slide-index="1"].active{
+        height: unset!important;
+    }
     .slideshow-container .carousel-container .carousel-images-container .carousel-image{
         position: relative!important;
         width: 100%!important;
         height: auto!important;
+        top: unset!important;
+        left: unset!important;
+        transform: unset!important; 
+        bottom: unset!important;
+        right: unset!important;
+    }
+    .slideshow-container .carousel-container .carousel-images-container:has(.carousel-image.img-3-1-1){
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .slideshow-container .carousel-container .carousel-images-container:has(.carousel-image.img-3-1-1) .carousel-image{
+        width: 100%;
+        height: auto;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-3-2{
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-3-2 .carousel-image{
+        width: 100%;
+        height: auto;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-4-2{
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-4-2 .carousel-image{
+        width: 100%;
+        height: auto;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-6-1{
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-6-1 .carousel-image{
+        width: 100%;
+        height: auto;
     }
 }   

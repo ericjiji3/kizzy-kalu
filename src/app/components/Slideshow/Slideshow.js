@@ -21,6 +21,9 @@ export default function Slideshow(){
         if (target.tagName.toLowerCase() === 'video') {
             return;
         }
+        if(window.innerWidth <= 1000){
+            return;
+        }
 
         const { left, width } = currentTarget.getBoundingClientRect();
         const clickPosition = clientX - left;
@@ -48,7 +51,9 @@ export default function Slideshow(){
         }
     };
 
+
     const handleSelectorClick = (e) => {
+        
         const index = parseInt(e.currentTarget.getAttribute('index')); 
         setCurrentIndex(index);
         console.log(index);
@@ -64,6 +69,27 @@ export default function Slideshow(){
         }
     };
 
+    const mobileLeftClick = () => {
+        const currentImages = currentImagesRef.current.children;
+        setImageIndex(prev => {
+            const newImageIndex = prev === 0 ? currentImages.length - 1 : prev - 1;
+            // Get the project index of the new image
+            const newProjectIndex = parseInt(currentImages[newImageIndex].getAttribute('project-index'));
+            setCurrentIndex(newProjectIndex);
+            return newImageIndex;
+        });
+    }
+
+    const mobileRightClick = () => {
+        const currentImages = currentImagesRef.current.children;
+        setImageIndex(prev => {
+            const newImageIndex = prev === currentImages.length - 1 ? 0 : prev + 1;
+            // Get the project index of the new image
+            const newProjectIndex = parseInt(currentImages[newImageIndex].getAttribute('project-index'));
+            setCurrentIndex(newProjectIndex);
+            return newImageIndex;
+        });
+    }
     // Add this useEffect to handle currentIndex updates
     // useEffect(() => {
     //     const currentImages = currentImagesRef.current.children;
@@ -132,9 +158,22 @@ export default function Slideshow(){
                         <span>6</span>
                     </div>
                 </div>
+
+            </div>
+            <div className="mobile-buttons-container">
+                    <div className='mobile-button prev' onClick={mobileLeftClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
+                            <path d="M0 5L7.5 0.669872L7.5 9.33013L0 5Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div className='mobile-button next' onClick={mobileRightClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
+                            <path d="M8 5L0.5 9.33013L0.5 0.669873L8 5Z" fill="black"/>
+                        </svg>
+                    </div>   
             </div>
             <div className='carousel-container' ref={currentImagesRef} onClick={handleCarouselClick}>
-
+                
                 <div className={imageIndex == 0 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={0} slide-index={0}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1ufHHos6wYdufaJpfjMhqZ/ca01a0139eb1be2c742511199605cc7e/05.jpg" 
