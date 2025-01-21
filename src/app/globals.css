@@ -56,11 +56,6 @@ span, a{
     font-size: 30px;
   }
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 .parent-container:has(.intro-container.inactive) .slideshow-container{
   opacity: 1; 
   transition: 1.5s ease-in;
