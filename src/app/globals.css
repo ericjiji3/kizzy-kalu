@@ -69,10 +69,8 @@ span, a{
   }
   .parent-container .slideshow-container{
     opacity: 1; 
-    transition: 1.5s ease-in;
+    transition: opacity 1.5s ease-in;
     transition-delay: 1.5s;
   }
-  .parent-container:has(.intro-container.inactive) .slideshow-container{
-    transition: none;
-  }
+
 }
