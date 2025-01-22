@@ -40,7 +40,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 h1,h2,h3,h4,h5,h6{
   font-size: 30px;
@@ -71,5 +71,8 @@ span, a{
     opacity: 1; 
     transition: 1.5s ease-in;
     transition-delay: 1.5s;
+  }
+  .parent-container:has(.intro-container.inactive) .slideshow-container{
+    transition: none;
   }
 }

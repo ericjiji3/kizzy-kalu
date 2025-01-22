@@ -281,6 +281,10 @@
         font-size: 10px;
         align-items: center;
     }
+    .slideshow-container .socials .mobile-links{
+        display: flex;
+        gap: 10px;
+    }
     .slideshow-container .descriptions-selectors-container{
         position: relative;
         bottom: unset;
@@ -292,7 +296,7 @@
     }
     .slideshow-container .descriptions-selectors-container .descriptions-container{
         width: 50%;
-        min-height: 100px;
+        min-height: 85px;
         margin-bottom: 0;
     }
     .slideshow-container .descriptions-selectors-container .descriptions-container .description-container{
