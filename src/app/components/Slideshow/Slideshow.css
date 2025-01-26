@@ -5,14 +5,14 @@
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 50px 0 50px 50px;
+    padding: 50px 0 50px 25px;
     opacity: 0;
 }
 .slideshow-container .mobile-header{
     display: none;
 }
 .slideshow-container .socials{
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
     position: absolute;
     top: calc(50% + 50px);
@@ -56,12 +56,12 @@
     display: block;
 }
 .slideshow-container .descriptions-selectors-container .descriptions-container .description-container .title{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .slideshow-container .descriptions-selectors-container .descriptions-container .description-container .roles, .location{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     font-style: italic;
 }
@@ -87,7 +87,7 @@
     /* overflow-y: scroll; */
     overflow-x: hidden;
     z-index: 5;
-    cursor: e-resize;
+    cursor: ew-resize;
     
 }
 .slideshow-container .mobile-buttons-container{
@@ -100,7 +100,7 @@
 .slideshow-container .carousel-container .carousel-images-container{
     position: absolute;
     right: 0px;
-    padding-right: 50px;
+    padding-right: 25px;
     width: 100%;
     top: 0;
     height: 100%;

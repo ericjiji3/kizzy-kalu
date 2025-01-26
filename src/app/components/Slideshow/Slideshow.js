@@ -146,19 +146,19 @@ export default function Slideshow(){
                 </div>
                 <div className='selectors-container'>
                     <div className={currentIndex == 0 ? 'selector-container active' : 'selector-container'} index={0} onClick={handleSelectorClick}>
-                        <span>1.1</span>
+                        <span>1</span>
                     </div>
                     <div className={currentIndex == 1 ? 'selector-container active' : 'selector-container'} index={1} onClick={handleSelectorClick}>
-                        <span>3</span>
+                        <span>2</span>
                     </div>
                     <div className={currentIndex == 2 ? 'selector-container active' : 'selector-container'} index={2} onClick={handleSelectorClick} >
-                        <span>1.2</span>
+                        <span>3</span>
                     </div>
                     <div className={currentIndex == 3 ? 'selector-container active' : 'selector-container'} index={3} onClick={handleSelectorClick} >
                         <span>4</span>
                     </div>
                     <div className={currentIndex == 4 ? 'selector-container active' : 'selector-container'} index={4} onClick={handleSelectorClick} >
-                        <span>6</span>
+                        <span>5</span>
                     </div>
                 </div>
 
@@ -187,7 +187,7 @@ export default function Slideshow(){
                     />
                 </div>
                 <div className={imageIndex == 1 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={0} slide-index={1}>
-                    <video width="320" height="240" controls playsInline preload="metadata"
+                    <video width="320" height="240" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-2-1'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/6ZfqaKTcs2BowZB91sACj3/b0663bf5fc57edec85b36d48bb41570c/CAR_SCENE_FINAL_2_-9X16-__1_.mp4#t=0.001" type="video/mp4" />
@@ -209,7 +209,7 @@ export default function Slideshow(){
                         height={1000} 
                         className='carousel-image img-1-3-1'
                     />
-                    <video width="320" height="240" controls playsInline preload="metadata"
+                    <video width="320" height="240" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-3-2'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/273QsF5eZJv2lmCJtqYJjJ/07ee4986762cb333f38343cba3069934/CHASE_SCENE_FINAL_-9x16-.mov#t=0.001" type="video/mp4" />
@@ -224,25 +224,25 @@ export default function Slideshow(){
                     />
                 </div>
                 <div className={imageIndex == 3 ? 'carousel-images-container project-1-4 active' : 'carousel-images-container'} project-index={0} slide-index={3}>
-                    <video width="320" height="500" controls playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-4-1'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/7kDBq8Png4A7hUMJfs6Ywn/12a07beb78fd45a5311d94830b8c3278/FIGHTER5X4_KHRIS.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-4-2'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/60gTP7KzimbNzDZ6nFGaLt/633114a88190f35292038772a1002c90/FIGHTER5X4_MANNY.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-4-3'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/k5aj1RlxKlp6yJtArE5wq/be045eb2b39ef44ad6447ebd1331ddc7/FIGHTER5X4_MATT.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
                         className='carousel-image img-1-4-4'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/1VIboL3tkUBNiJWvdomBuh/5dff31a6b1fe0022eb40e06d6409adfe/FIGHTER5X4_MELL.mp4#t=0.001" type="video/mp4" />

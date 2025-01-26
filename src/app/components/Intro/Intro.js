@@ -1,11 +1,20 @@
 'use client';
 import './Intro.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Intro(){
     const [clicked, setClicked] = useState(false);
     const [isMouseMoving, setIsMouseMoving] = useState(false);
     const [timer, setTimer] = useState(null);
+    const [videoReady, setVideoReady] = useState(false);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+      const video = videoRef.current;
+
+          video.currentTime = Math.random() * video.duration;
+          setVideoReady(true);
+  }, []);
 
     const handleMouseMove = () => {
         setIsMouseMoving(true);
@@ -47,8 +56,9 @@ export default function Intro(){
             </div>
             <div className='intro-vid-container'>
                 <div className={isMouseMoving ? 'overlay inactive' : 'overlay'}></div>
-                <video width="320" height="240" controls={false} preload="none" loop muted autoPlay={true}>
-                    <source src="/intro-test.mp4" type="video/mp4" />
+                <div className={videoReady ? 'black-bg inactive' : 'black-bg'}></div>
+                <video ref={videoRef} width="320" height="240" controls={false} preload="metadata" loop muted autoPlay={true} >
+                    <source src="/intro.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
