@@ -188,6 +188,7 @@
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
    gap: 10px;   
+   padding-left: 10px;
 }
 .slideshow-container .carousel-container .carousel-images-container.project-1-4 .carousel-image{
     width: 100%;
@@ -256,6 +257,16 @@
 .slideshow-container .carousel-container .carousel-images-container.project-6-1 img{
     width: 300px;
     height: auto;
+}
+@media(max-width: 1500px){
+    .slideshow-container .carousel-container .carousel-images-container.project-4-2 img{
+        height: 300px;
+        width: auto;
+    }
+    .slideshow-container .carousel-container .carousel-images-container.project-6-1 img{
+        width: 250px;
+        height: auto;
+    }
 }
 @media(max-width: 1000px){
     .slideshow-container{
