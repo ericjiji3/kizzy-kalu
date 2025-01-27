@@ -11,10 +11,25 @@ export default function Intro(){
 
     useEffect(() => {
       const video = videoRef.current;
-
-          video.currentTime = Math.random() * video.duration;
+      
+      const handleVideoInit = () => {
+        console.log("Window loaded, setting video time");
+        if (video && video.duration) {
+          video.currentTime = Math.round(Math.random() * video.duration);
           setVideoReady(true);
-  }, []);
+          video.play().catch(error => {
+            console.log("Video play failed:", error);
+          });
+        }
+      };
+    
+      window.addEventListener('load', handleVideoInit);
+    
+      // Cleanup listener
+      return () => {
+        window.removeEventListener('load', handleVideoInit);
+      };
+    }, []);
 
     const handleMouseMove = () => {
         setIsMouseMoving(true);
@@ -57,7 +72,7 @@ export default function Intro(){
             <div className='intro-vid-container'>
                 <div className={isMouseMoving ? 'overlay inactive' : 'overlay'}></div>
                 <div className={videoReady ? 'black-bg inactive' : 'black-bg'}></div>
-                <video ref={videoRef} width="320" height="240" controls={false} preload="metadata" loop muted autoPlay={true} >
+                <video ref={videoRef} width="320" height="240" controls={false} preload="auto" loop playsInline muted autoPlay={true} >
                     <source src="/intro.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
