@@ -13,6 +13,8 @@ pnpm dev
 # or
 bun dev
 ```
+NOTES: LOOK INTO DYNAMICALLY LAODING VIDEO ON SLIDE CLICK(PAGINATION)
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

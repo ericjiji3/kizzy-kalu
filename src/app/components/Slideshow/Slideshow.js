@@ -123,19 +123,29 @@ export default function Slideshow(){
                         <span className='location'>New York City</span>
                     </div>
                     <div className={currentIndex == 1 ? 'description-container active' : 'description-container'} index={1}>
+                        <span className='title'>Drumroll Donuts Vintage Advertisements</span>
+                        <span className='roles'>Rebrand Art Direction and Photography</span>
+                        <span className='location'>Los Angeles</span>
+                    </div>
+                    <div className={currentIndex == 2 ? 'description-container active' : 'description-container'} index={2}>
                         <span className='title'>New York Model Management</span>
                         <span className='location'>New York City</span>
                     </div>
-                    <div className={currentIndex == 2 ? 'description-container active' : 'description-container'} index={2}>
+                    <div className={currentIndex == 3 ? 'description-container active' : 'description-container'} index={3}>
                         <span className='title'>Kody Philips - Look Books</span>
                         <span className='roles'>Creative Direction and Photography</span>
                         <span className='location'>New York City</span>
                     </div>
-                    <div className={currentIndex == 3 ? 'description-container active' : 'description-container'} index={3}>
+                    <div className={currentIndex == 4 ? 'description-container active' : 'description-container'} index={4}>
+                        <span className='title'>Drumroll Donuts Vintage Advertisements</span>
+                        <span className='roles'>Photography and Graphic Design</span>
+                        <span className='location'>Los Angeles</span>
+                    </div>
+                    <div className={currentIndex == 5 ? 'description-container active' : 'description-container'} index={5}>
                         <span className='title'>Offshore Agency</span>
                         <span className='location'>New York City</span>
                     </div>  
-                    <div className={currentIndex == 4 ? 'description-container active' : 'description-container'} index={4}>
+                    <div className={currentIndex == 6 ? 'description-container active' : 'description-container'} index={6}>
                         <span className='title'>We Think. We Are.</span>
                         <span className='roles'>Published by <a href="https://www.ilfordphoto.com/ortho-oil-paint/" target='_blank'>Ilford Photo</a><br/>
                             Exhibited at Fice Gallery and <a href="https://notrealart.com/exhibition/out-of-body/" target='_blank'>NOTREALART</a><br/>
@@ -143,6 +153,20 @@ export default function Slideshow(){
                             </span>
                         <span className='location'>Salt Lake City</span>
                     </div>  
+                    <div className={currentIndex == 7 ? 'description-container active' : 'description-container'} index={7}>
+                        <span className='title'>Midnight Club</span>
+                        <span className='roles'>Personal Project</span>
+                        <span className='location'>Provo, Utah</span>
+                    </div> 
+                    <div className={currentIndex == 8 ? 'description-container active' : 'description-container'} index={8}>
+                        <span className='title'>People You'd Love</span>
+                        <span className='roles'>Premiered at the Utah Museum of Contemporary Art<br/>Winner of best cinematography at the 2023 Utah Dance Film Festival</span>
+                        <span className='location'>Eden, Utah</span>
+                    </div> 
+                    <div className={currentIndex == 9 ? 'description-container active' : 'description-container'} index={8}>
+                        <span className='title'>Film Photography</span>
+                        <span className='location'>New York City</span>
+                    </div> 
                 </div>
                 <div className='selectors-container'>
                     <div className={currentIndex == 0 ? 'selector-container active' : 'selector-container'} index={0} onClick={handleSelectorClick}>
@@ -159,6 +183,21 @@ export default function Slideshow(){
                     </div>
                     <div className={currentIndex == 4 ? 'selector-container active' : 'selector-container'} index={4} onClick={handleSelectorClick} >
                         <span>5</span>
+                    </div>
+                    <div className={currentIndex == 5 ? 'selector-container active' : 'selector-container'} index={5} onClick={handleSelectorClick} >
+                        <span>6</span>
+                    </div>
+                    <div className={currentIndex == 6 ? 'selector-container active' : 'selector-container'} index={6} onClick={handleSelectorClick} >
+                        <span>7</span>
+                    </div>
+                    <div className={currentIndex == 7 ? 'selector-container active' : 'selector-container'} index={7} onClick={handleSelectorClick} >
+                        <span>8</span>
+                    </div>
+                    <div className={currentIndex == 8 ? 'selector-container active' : 'selector-container'} index={8} onClick={handleSelectorClick} >
+                        <span>9</span>
+                    </div>
+                    <div className={currentIndex == 9 ? 'selector-container active' : 'selector-container'} index={8} onClick={handleSelectorClick} >
+                        <span>10</span>
                     </div>
                 </div>
 
@@ -209,7 +248,7 @@ export default function Slideshow(){
                         height={1000} 
                         className='carousel-image img-1-3-1'
                     />
-                    <video width="320" height="240" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="240" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-3-2'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/273QsF5eZJv2lmCJtqYJjJ/07ee4986762cb333f38343cba3069934/CHASE_SCENE_FINAL_-9x16-.mov#t=0.001" type="video/mp4" />
@@ -224,25 +263,25 @@ export default function Slideshow(){
                     />
                 </div>
                 <div className={imageIndex == 3 ? 'carousel-images-container project-1-4 active' : 'carousel-images-container'} project-index={0} slide-index={3}>
-                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-4-1'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/7kDBq8Png4A7hUMJfs6Ywn/12a07beb78fd45a5311d94830b8c3278/FIGHTER5X4_KHRIS.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-4-2'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/60gTP7KzimbNzDZ6nFGaLt/633114a88190f35292038772a1002c90/FIGHTER5X4_MANNY.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-4-3'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/k5aj1RlxKlp6yJtArE5wq/be045eb2b39ef44ad6447ebd1331ddc7/FIGHTER5X4_MATT.mp4#t=0.001" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-4-4'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/1VIboL3tkUBNiJWvdomBuh/5dff31a6b1fe0022eb40e06d6409adfe/FIGHTER5X4_MELL.mp4#t=0.001" type="video/mp4" />
@@ -250,14 +289,62 @@ export default function Slideshow(){
                     </video>
                 </div>
                 <div className={imageIndex == 4 ? 'carousel-images-container project-1-5 active' : 'carousel-images-container'} project-index={0} slide-index={4}>
-                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline preload="metadata"
+                    <video width="320" height="500" controls={false} loop muted autoPlay={true} playsInline 
                         className='carousel-image img-1-5-5'
                     >
                         <source src="https://videos.ctfassets.net/tu2om6uq2183/3CWwsAVfRr4YJd7JYdU3z1/7d9e5237fe3a99906934d03cb8fd1101/01_video_KODYPHILLIPS_FW24_001.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div className={imageIndex == 5 ? 'carousel-images-container project-3-1 active' : 'carousel-images-container'} project-index={1} slide-index={5}>
+                <div className={imageIndex == 5 ? 'carousel-images-container project-1-5 active' : 'carousel-images-container'} project-index={1} slide-index={5}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/i4sGlSX0IFNaIMETI1bQ9/5d4dfe66b21bac6d2a9a56b62f8ac594/dr_1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-1'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/6RyR0L1x9ARb9YfcUP7kC4/6215383af86b68d86677fd31787fd9ce/dr_3.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 6 ? 'carousel-images-container project-4-2 active' : 'carousel-images-container'} project-index={1} slide-index={6}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/1nEXbEcVZTUKyGgOxFoY8f/fd53ff8dfc4d6e7188dd42ae720e4e8f/dr_10.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-4-2-4'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/ps6crlgz4xxCMbTg6FsrF/a7292e6a6e65770caa78b51520e1ff5b/dr_12.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-4-2-4'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/64mPUqtEixmlWaNDxvCZTY/248aa12487fd84c2d1cf938c872069ae/dr_11.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-4-2-4'
+                    />
+                </div>
+                <div className={imageIndex == 7 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={1} slide-index={7}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/12TCof2MLnDIm3mkHd3f92/998d9570629eac1a9c8c82877001f820/dr_30.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 8 ? 'carousel-images-container project-3-1 active' : 'carousel-images-container'} project-index={2} slide-index={8}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/5LWS0GsvhmoZhxHvn3PJZZ/b817c7636aa96d8b3a85b37b121e2444/4.jpg" 
                         alt='kody' 
@@ -273,7 +360,7 @@ export default function Slideshow(){
                         className='carousel-image img-3-1-2'
                     />
                 </div>
-                <div className={imageIndex == 6 ? 'carousel-images-container project-3-2 active' : 'carousel-images-container'} project-index={1} slide-index={6}>
+                <div className={imageIndex == 9 ? 'carousel-images-container project-3-2 active' : 'carousel-images-container'} project-index={2} slide-index={9}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/3UtGkPbWuahTjGhZ3y5QbY/203141ed782c9582dbfe06078df5cd22/3_COmpressed.jpg" 
                         alt='kody' 
@@ -289,7 +376,7 @@ export default function Slideshow(){
                         className='carousel-image img-3-2-1'
                     />
                 </div>
-                <div className={imageIndex == 7 ? 'carousel-images-container project-3-1 active' : 'carousel-images-container'} project-index={1} slide-index={7}>
+                <div className={imageIndex == 10 ? 'carousel-images-container project-3-1 active' : 'carousel-images-container'} project-index={2} slide-index={10}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/6ZdfP2GkqfV8UOxyjefC4A/2a6d8af9f4a0a28011dd9292363bf58e/5.jpg" 
                         alt='kody' 
@@ -305,7 +392,7 @@ export default function Slideshow(){
                         className='carousel-image img-3-1-2'
                     />
                 </div>
-                <div className={imageIndex == 8 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={2} slide-index={8}>
+                <div className={imageIndex == 11 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={3} slide-index={11}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1Da6uWVIyzXTtHKBdxg8o2/1a3b856968f445ad80970be397a216b2/1.jpg" 
                         alt='kody' 
@@ -314,7 +401,7 @@ export default function Slideshow(){
                         className='carousel-image img-1-1-1'
                     />
                 </div>
-                <div className={imageIndex == 9 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={2} slide-index={9}>
+                <div className={imageIndex == 12 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={3} slide-index={12}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1EaC7Gyt0DAgyFBArLUgEg/b2ec83980fb80cd9fb96148fb92e7237/3.jpg" 
                         alt='kody' 
@@ -323,7 +410,7 @@ export default function Slideshow(){
                         className='carousel-image img-3-1-1'
                     />
                 </div>
-                <div className={imageIndex == 10 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={2} slide-index={10}>
+                <div className={imageIndex == 13 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={3} slide-index={13}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/7Frukt2rlNTEXVSVA52tfE/418aa41b0bbf3d30c1904486ce541a34/2.jpg" 
                         alt='kody' 
@@ -339,7 +426,56 @@ export default function Slideshow(){
                         className='carousel-image img-3-1-1'
                     />
                 </div>
-                <div className={imageIndex == 11 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={3} slide-index={11}>
+                
+
+                <div className={imageIndex == 14 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={14}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/wsD6vUfSxudiiPlEGahTa/db40dce69a1b62ddd71bc1008292dea9/AD1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 15 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={15}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/5h68u94BTOISzrampSPcoN/5dadfa7f8d3cbbd063d38a41b63042ec/mag_2.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 16 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={16}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/3EjrctTTKcJEoFGxUBmOlR/08d6d64168871bfc8e1e30a1bac0aa38/AD3.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 17 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={17}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/2EfmIaM4YvgqgWTRB6cpU2/d8ca88b57aeaafe181e202c1b23672c1/mag_1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 18 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={18}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/J2ApI49GsQP7mRkNhgTJY/f9cf2d84339984ae9bdc80fc5c69d2cf/mag_5.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+
+
+                <div className={imageIndex == 19 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={5} slide-index={19}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/3fBRvwsjCdSmsFeoEu53Pz/c71a50e17930b856fdadea5c557b5aaf/Kizzy-_5_.jpg" 
                         alt='kody' 
@@ -348,7 +484,7 @@ export default function Slideshow(){
                         className='carousel-image img-4-1-5 center'
                     />
                 </div>
-                <div className={imageIndex == 12 ? 'carousel-images-container active project-4-2' : 'carousel-images-container'} project-index={3} slide-index={12}>
+                <div className={imageIndex == 20 ? 'carousel-images-container active project-4-2' : 'carousel-images-container'} project-index={5} slide-index={20}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1YMz3DkL5dg5t4MOVOcMHa/7a8caf3f845fae857bbd15fd2f5841e4/Kizzy-_4_.jpg" 
                         alt='kody' 
@@ -371,7 +507,9 @@ export default function Slideshow(){
                         className='carousel-image img-4-2-6'
                     />
                 </div>
-                <div className={imageIndex == 13 ? 'carousel-images-container active project-6-1' : 'carousel-images-container'} project-index={4} slide-index={13}>
+
+
+                <div className={imageIndex == 21 ? 'carousel-images-container active project-6-1' : 'carousel-images-container'} project-index={6} slide-index={21}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1MjgiXLPN9MwkPN9AA7pLG/8041f9300faf0e24e9be3e20926eaf63/WTWR_01.jpg" 
                         alt='kody' 
@@ -394,7 +532,7 @@ export default function Slideshow(){
                         className='carousel-image img-6-1-3'
                     />
                 </div>
-                <div className={imageIndex == 14 ? 'carousel-images-container active project-6-1' : 'carousel-images-container'} project-index={4} slide-index={14}>
+                <div className={imageIndex == 22 ? 'carousel-images-container active project-6-1' : 'carousel-images-container'} project-index={6} slide-index={22}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/1vds0TgYLooij7quVBZZus/41d427916cee0981ebf3e96f9a07ce4a/WTWR_04.jpg" 
                         alt='kody' 
@@ -417,7 +555,7 @@ export default function Slideshow(){
                         className='carousel-image img-6-2-6'
                     />
                 </div>
-                <div className={imageIndex == 15 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={4} slide-index={15}>
+                <div className={imageIndex == 23 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={6} slide-index={23}>
                     <Image 
                         src="https://images.ctfassets.net/tu2om6uq2183/4lpLAmBc5B6j5q7XUe3zs/719f856bc6cb8249b94e67ae9e439a44/WTWR_07.jpg" 
                         alt='kody' 
@@ -425,6 +563,187 @@ export default function Slideshow(){
                         height={700} 
                         className='carousel-image img-6-3-7 center'
                     /> 
+                </div>
+
+                <div className={imageIndex == 24 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={7} slide-index={24}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/4h4B27mxx2IpJYuDjH1C11/a51ae2adf37b09f427065d37849ebf2f/image_1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 25 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={7} slide-index={25}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/6mMxBYIkDqGlzd2YsCbvDo/ff808007b217c5f099822a525481b21d/Image_2.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 26 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={7} slide-index={26}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/6WwRXifG5z7rx9ELS0z0Wa/61dd72c391e5c46368f1be7788b57cfe/image_3.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-2'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/36fnJHpj15QdUzcNC6mh6y/1b5fb8f8f481069cfbaa00cc0010e085/image_4.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 27 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={8} slide-index={27}>
+                    <div className='carousel-image img-1-1-1'>
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/QHTLOFgKkAs" title="PEOPLE YOU&#39;D LOVE (Short Film)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div className={imageIndex == 28 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={28}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/1JvafHmQxFflaphAUacxji/873bdf0d2bf35dc2153932af5633879a/01__2_.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 29 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={29}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/JdApsS7rCoCjD2xidZshb/924ce5a1a3f70b25ac8357da5727a5a9/02__1_.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 30 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={30}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/1D02sl0QtAXSlI1KrVYw2t/a0580da6787b5026c83ba33c0a331233/03.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-2'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/59gwXi1F0E2HaruEgHH6tl/d846364589b26773800ac10962581360/04.1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 31 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={31}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/2z0RESRpQPfYxRnlhe2UPl/8ac538efc32a39c58ea6378c02ca5493/04.2.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 32 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={32}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/7wsCxUWuE7Pm8atcfwKFWH/a0106539d0361a037f737bbbafe14253/05__1_.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 33 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={33}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/4mjucSxrtnKfDtaVJ2KB6w/7272300151e50fe403e2437b8503adb2/06.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 34 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={34}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/OOYYyeaUnMxSDumf7NXR9/f6b05fac44c0674aa8977af501ba91b7/07.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 35 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={35}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/5NpAoqziPQNrd9MTl7rqZd/bf6e3b441833de769b606a1fe2343804/08.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 36 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={35}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/5IBPJTgcSMmS4J2FPKEH70/ad7757e8843f69a7ee1c5c024e4e0b6d/09.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 37 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={37}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/1bz6p4aeqJETeHsB7IyPC0/b09662e21da738bd38769a975417334e/10.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 38 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={38}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/5U3vPiPjI6n2CNbkuaeJdL/5dc1ce007f655c467d299104840907f7/11.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 39 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={39}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/3zLcYTC0b7UvptSuGgKtSw/21aa69bf21fb83f58a3195f4c6018a45/12.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 40 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={40}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/7rqSFkQ8kDJiJcL7kc2Vbe/cb1400e5d4ebda1352e4a96c17218044/13.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-2'
+                    />
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/1x7EoDw47bbkx2dFzGJbdY/9b3d6e2466c0637f6f156c27441bf0cb/13.1.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-3-1-1'
+                    />
+                </div>
+                <div className={imageIndex == 41 ? 'carousel-images-container active' : 'carousel-images-container'} project-index={9} slide-index={41}>
+                    <Image 
+                        src="https://images.ctfassets.net/tu2om6uq2183/2cFpsLgivW1ytNlohAD3eX/c71a0f124b697e4acdbc0dfa6b6eab38/14__2_.jpg" 
+                        alt='kody' 
+                        width={1000} 
+                        height={1000} 
+                        className='carousel-image img-1-1-1'
+                    />
                 </div>
             </div>
         </div>
