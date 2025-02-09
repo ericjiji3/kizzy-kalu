@@ -64,7 +64,7 @@ export default function Intro(){
                     <h1>KIZZY KALU</h1>
                 </div>
                 <div className='start-container'>
-                    <span>Director & Photographer</span>
+                    <span>Direction & Photography</span>
                     <span>©2025</span>
                     <span>Click to Enter</span>
                 </div>
